@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-image: url(/images/bg\ img.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 20vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 0 1em;
+}
+h1{
+    font-size: 1.2rem;
+    margin: 0;
+}
+header p{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(174, 172, 172);
+}
+
+.product>p:first-child{
+    font-size: 2.8em;
+    margin: 0;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
+.product-info{
+    width: 70%;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-info>h1, .product-info>p{
+    padding: .3em 0;
+}
+.product-info p{
+    margin: 0;
+    font-size: .8rem;
+}
+.product-info h2{
+    font-size: 1.1rem;
+    margin: 0;
+}
+.product > p:last-child{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 40px; 
+    height: 40px; 
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    padding-bottom: .145em;
+    font-weight: lighter;
+}
+.container{
+    margin: 1.5em 2em 1.5em 2em;
+    flex: 1;
+}
+
+.order h2{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.3em;
+
+}
+.order p{
+    display: flex;
+    align-items: center;
+}
+.ordered-products{
+    display: flex;
+    flex-direction: column;
+}
+
+.ordered-product p{
+    font-size: .95rem;
+}
+.ordered-product div{
+    display: flex;
+    align-items: center;
+}
+.ordered-product div > p {
+    display: inline;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: .2em;
+}
+.ordered-product, .total-price{
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 1em;
+    line-height: .5;
+}
+
+#remove-btn{
+    border: none;
+    background: none;
+    font-size: .7rem;
+    padding-top: .5em;
+    color: rgb(131, 131, 131);
+}
+
+.total-price{
+    border-top: 1px solid black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.primary-btn{
+    width: 100%;
+    padding: .8em;
+    margin-top: 1em;
+    background-color: #F59E0B;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.hidden{
+    display: none;
+}
+
+.payment-details{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    height: 50%;
+    width: 85%;
+    background-color: white;
+}
+input{
+    width: 100%;
+    padding: 1em;
+}
+
+.successful-order{
+    width: 100%;
+    padding: 1.1em .6em;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: #9b5402;
+}
+
+.payment-details, .modal-rating{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 30px 5px #666;
+}
+
+.modal-rating{
+    height: 23%;
+    width: 85%;
+    background-color: white;
+}
+.body-modal-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+.body-modal-rating p{
+    margin-bottom: .5em;
+    color: black;
+    font-weight: bold;
+}
+
+.fa-xmark {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: grey; 
+    cursor: pointer; 
+}
+.filled {
+    color: #F59E0B; 
+}
+#rate-btn{
+    background-color: #F59E0B;
+    padding: .5em;
+    margin: 1em 0;
+    width: 50%;
+    border: none;
+    font-weight: 600;
+}
+
+footer{
+ color: grey;
+ text-align: center;
+ font-size: .8rem;
+ margin-top: auto;
+ padding-bottom: 1em;
+}

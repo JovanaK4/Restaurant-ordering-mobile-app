@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jovana's dinner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+
+<body>
+    <header>
+        <h1>JOVANA'S DINNER</h1>
+        <p>The best burgers and pizzas in town</p>
+    </header>
+    <div class="container">
+        <div class="products">
+        </div>
+        <div class="order hidden">
+            <h2>Your order</h2>
+            <div class="ordered-products">
+            </div>
+            <div class="total-price">
+                <h2>Total price:</h2>
+                <p></p>
+            </div>
+            <button id="order-btn" class="primary-btn" data-complete-order="payment-details">Complete order</button>
+        </div>
+        <div class="payment-details">
+            <h2>Enter your card details</h2>
+            <input type="tekst" name="userName" placeholder="Enter your name" aria-label="User name" required />
+            <input type="tekst" name="cardNumber" placeholder="Enter card number" aria-label="Card number" required />
+            <input type="tekst" name="CVV" placeholder="Enter CVV" aria-label="CVV" required />
+            <button class="primary-btn" data-pay="successful-order">Pay</button>
+        </div>
+        <div class="modal-rating hidden">
+            <i class="fa-solid fa-xmark" data-exit="modal-rating"></i>
+            <div class="body-modal-rating">
+                <p>If you want you can rate us!</p>
+                <div>
+                    <i class="fa-regular fa-star" data-index="1"></i>
+                    <i class="fa-regular fa-star" data-index="2"></i>
+                    <i class="fa-regular fa-star" data-index="3"></i>
+                    <i class="fa-regular fa-star" data-index="4"></i>
+                    <i class="fa-regular fa-star" data-index="5"></i>
+                </div>
+                <button id="rate-btn" data-rate-btn="body-modal-rating">Rate</button>
+            </div>
+        </div>
+        <div class="successful-order">
+        </div>
+    </div>
+    <footer id="footer">
+    </footer>
+    <script src='script.js' type="module"></script>
+</body>
+</html>
