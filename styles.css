@@ -225,3 +225,12 @@ footer{
  margin-top: auto;
  padding-bottom: 1em;
 }
+
+@media screen and (max-width: 353px){
+    .product-info{
+        padding-left: .5em;
+    }
+    .product-info > p:first-of-type{
+        font-size: .7rem;
+    }
+}
